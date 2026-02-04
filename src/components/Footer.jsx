@@ -1,31 +1,5 @@
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import { useEffect, useState } from 'react';
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const [footerRef, isVisible] = useScrollAnimation({ threshold: 0.1, once: true });
-  const [shouldShow, setShouldShow] = useState(false);
-
-  useEffect(() => {
-    // Fallback: if footer is already in viewport on load, show it
-    const checkVisibility = () => {
-      if (footerRef.current) {
-        const rect = footerRef.current.getBoundingClientRect();
-        const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
-        if (isInViewport) {
-          setShouldShow(true);
-        }
-      }
-    };
-
-    checkVisibility();
-    window.addEventListener('scroll', checkVisibility);
-    setTimeout(checkVisibility, 500); // Check after a short delay
-
-    return () => window.removeEventListener('scroll', checkVisibility);
-  }, [footerRef]);
-
-  const showContent = isVisible || shouldShow;
 
   const footerLinks = {
     company: [
@@ -48,22 +22,21 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="footer" ref={footerRef}>
+    <footer className="footer">
       <div className="container">
         <div className="footer-content">
-          <div className={`footer-section fade-in-up ${showContent ? 'animate-on-scroll' : ''}`}>
+          <div className="footer-section">
             <h3 className="footer-logo">Fruit Junction</h3>
             <p className="footer-description">
-              Delivering nature's best—fresh fruits, juices, and more—handpicked 
+              Delivering nature's best—fresh fruits, juices, and more—handpicked
               for quality and health, straight to your doorstep.
             </p>
             <div className="social-links">
-              {socialLinks.map((social, index) => (
+              {socialLinks.map((social) => (
                 <a
                   key={social.name}
                   href={social.href}
                   className="social-link"
-                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <span className="social-icon">{social.icon}</span>
                   <span className="sr-only">{social.name}</span>
@@ -72,7 +45,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className={`footer-section fade-in-up ${showContent ? 'animate-on-scroll' : ''}`} style={{ animationDelay: '0.1s' }}>
+          <div className="footer-section">
             <h4 className="footer-title">Company</h4>
             <ul className="footer-links">
               {footerLinks.company.map((link) => (
@@ -83,7 +56,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className={`footer-section fade-in-up ${showContent ? 'animate-on-scroll' : ''}`} style={{ animationDelay: '0.2s' }}>
+          <div className="footer-section">
             <h4 className="footer-title">Products</h4>
             <ul className="footer-links">
               {footerLinks.products.map((link) => (
@@ -94,26 +67,26 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className={`footer-section fade-in-up ${showContent ? 'animate-on-scroll' : ''}`} style={{ animationDelay: '0.3s' }}>
+          <div className="footer-section">
             <h4 className="footer-title">Contact Info</h4>
             <ul className="footer-contact">
               <li>
                 <span className="contact-icon">📍</span>
-                <span>Indore, Madhya Pradesh</span>
+                <span>Kolkata, West Bengal</span>
               </li>
               <li>
                 <span className="contact-icon">📞</span>
-                <span>+91 XXXXX XXXXX</span>
+                <span>+91 7890437011</span>
               </li>
               <li>
                 <span className="contact-icon">✉️</span>
-                <span>info@fruitjunction.com</span>
+                <span>fruitjunction.in@gmail.com</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className={`footer-bottom fade-in-up ${showContent ? 'animate-on-scroll' : ''}`} style={{ animationDelay: '0.4s' }}>
+        <div className="footer-bottom">
           <p>&copy; {currentYear} Fruit Junction. All rights reserved.</p>
         </div>
       </div>

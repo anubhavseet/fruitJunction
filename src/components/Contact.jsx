@@ -32,20 +32,20 @@ const Contact = () => {
     {
       icon: '📍',
       title: 'Address',
-      info: 'Indore, Madhya Pradesh, India',
+      info: 'Kolkata, West Bengal, India',
       link: '#'
     },
     {
       icon: '📞',
       title: 'Phone',
-      info: '+91 XXXXX XXXXX',
-      link: 'tel:+91XXXXXXXXXX'
+      info: '+91 7890437011',
+      link: 'tel:+917890437011'
     },
     {
       icon: '✉️',
       title: 'Email',
-      info: 'info@fruitjunction.com',
-      link: 'mailto:info@fruitjunction.com'
+      info: 'fruitjunction.in@gmail.com',
+      link: 'mailto:fruitjunction.in@gmail.com'
     },
     {
       icon: '🕒',
@@ -56,8 +56,8 @@ const Contact = () => {
   ];
 
   return (
-    <section 
-      id="contact" 
+    <section
+      id="contact"
       className="contact-section"
       style={{
         background: `linear-gradient(135deg, ${currentBackground.colors[1]}dd, ${currentBackground.colors[2]}dd)`,
@@ -84,7 +84,7 @@ const Contact = () => {
             <p className="contact-description">
               Reach out to us through any of these channels. We're here to help you with all your fresh fruit needs!
             </p>
-            
+
             <div className="contact-info-grid">
               {contactInfo.map((item, index) => (
                 <div
