@@ -12,7 +12,7 @@ const Products = () => {
       originalPrice: 249,
       salePrice: 199,
       category: 'Paneer Based Protein Salad',
-      image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop',
+      image: '/images/products/paneer_salad.png',
       onSale: true
     },
     {
@@ -21,7 +21,7 @@ const Products = () => {
       originalPrice: 349,
       salePrice: 289,
       category: 'Paneer Based Protein Salad',
-      image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop',
+      image: '/images/products/paneer_salad.png',
       onSale: true
     },
     {
@@ -30,7 +30,7 @@ const Products = () => {
       originalPrice: 499,
       salePrice: 349,
       category: 'Paneer Based Protein Salad',
-      image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop',
+      image: '/images/products/paneer_salad.png',
       onSale: true
     },
     {
@@ -39,7 +39,7 @@ const Products = () => {
       originalPrice: 239,
       salePrice: 189,
       category: 'Paneer Based Protein Salad',
-      image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop',
+      image: '/images/products/paneer_salad.png',
       onSale: true
     },
   ];
@@ -50,28 +50,28 @@ const Products = () => {
       name: 'Creamy Fruit Bowl',
       price: 299,
       category: 'Fresh Mixed Fruit Salad',
-      image: 'https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=400&h=400&fit=crop'
+      image: '/images/products/creamy_fruit_bowl.png'
     },
     {
       id: 6,
       name: 'Loki Mint Detox Juice – 300 ML',
       price: 129,
       category: 'Healthy Detox Juices',
-      image: 'https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400&h=400&fit=crop'
+      image: '/images/products/green_detox_juice.png'
     },
     {
       id: 7,
       name: 'Lemon Juice – 300 ML',
       price: 129,
       category: 'Healthy Detox Juices',
-      image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=400&fit=crop'
+      image: '/images/products/orange_juice.png'
     },
     {
       id: 8,
       name: 'Amla Anar Detox Juice – 300 ML',
       price: 129,
       category: 'Healthy Detox Juices',
-      image: 'https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400&h=400&fit=crop'
+      image: '/images/products/green_detox_juice.png'
     },
   ];
 
