@@ -13,63 +13,127 @@ const Menu = () => {
       name: 'All Items',
       icon: '🍎',
       items: [
-        { id: 1, name: 'Exotic Fruit Salad', price: 199, image: 'https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=300&h=300&fit=crop' },
-        { id: 2, name: 'Super Exotic Fruit Salad', price: 249, image: 'https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=300&h=300&fit=crop' },
-        { id: 3, name: 'Regular Fruit Salad', price: 149, image: 'https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=300&h=300&fit=crop' },
-        { id: 4, name: 'Cream Chia Paneer Salad', price: 199, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
-        { id: 5, name: 'Strawberry Juice', price: 129, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
-        { id: 6, name: 'Watermelon Juice', price: 119, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
+        { id: 1, name: 'Creamy Fruit Bowl', price: 299, image: 'https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=300&h=300&fit=crop' },
+        { id: 2, name: 'Cream Chia Paneer Salad', price: 199, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
+        { id: 3, name: 'High Protein Rajma Salad', price: 289, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
+        { id: 4, name: 'Lettuce Paprika Paneer Salad', price: 349, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
+        { id: 5, name: 'Paneer Protein Salad', price: 189, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
+        { id: 6, name: 'Loki Mint Detox Juice', price: 129, image: 'https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=300&h=300&fit=crop' },
+        { id: 7, name: 'Lemon Juice', price: 129, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
+        { id: 8, name: 'Amla Anar Detox Juice', price: 129, image: 'https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=300&h=300&fit=crop' },
       ]
     },
     {
       id: 2,
-      name: 'Fruit Salads',
+      name: 'Fresh Mixed Fruit Salad',
       icon: '🍓',
       items: [
-        { id: 1, name: 'Exotic Fruit Salad', price: 199, image: 'https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=300&h=300&fit=crop' },
-        { id: 2, name: 'Super Exotic Fruit Salad', price: 249, image: 'https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=300&h=300&fit=crop' },
-        { id: 3, name: 'Regular Fruit Salad', price: 149, image: 'https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=300&h=300&fit=crop' },
-        { id: 4, name: 'Mixed Fruit Bowl', price: 179, image: 'https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=300&h=300&fit=crop' },
+        { id: 1, name: 'Creamy Fruit Bowl', price: 299, image: 'https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=300&h=300&fit=crop' },
+        { id: 2, name: 'Fruit Salad Classic', price: 249, image: 'https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=300&h=300&fit=crop' },
+        { id: 3, name: 'Exotic Fruit Mix', price: 199, image: 'https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=300&h=300&fit=crop' },
+        { id: 4, name: 'Tropical Fruit Bowl', price: 279, image: 'https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=300&h=300&fit=crop' },
+        { id: 5, name: 'Seasonal Fruit Mix', price: 229, image: 'https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=300&h=300&fit=crop' },
       ]
     },
     {
       id: 3,
-      name: 'Protein Salads',
+      name: 'Paneer Protein Salad',
       icon: '🥗',
       items: [
         { id: 1, name: 'Cream Chia Paneer Salad', price: 199, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
         { id: 2, name: 'High Protein Rajma Salad', price: 289, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
-        { id: 3, name: 'Lettuce Paprika Paneer Salad', price: 275, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
+        { id: 3, name: 'Lettuce Paprika Paneer Salad', price: 349, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
         { id: 4, name: 'Paneer Protein Salad', price: 189, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
+        { id: 5, name: 'Classic Paneer Salad', price: 219, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
+        { id: 6, name: 'Spicy Paneer Delight', price: 259, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
       ]
     },
     {
       id: 4,
-      name: 'Fresh Juices',
+      name: 'Fresh Fruit Juices',
       icon: '🧃',
       items: [
-        { id: 1, name: 'Strawberry Juice', price: 129, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
-        { id: 2, name: 'Watermelon Juice', price: 119, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
-        { id: 3, name: 'Kiwi Juice', price: 189, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
-        { id: 4, name: 'Apple Juice', price: 159, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
-        { id: 5, name: 'Orange Juice', price: 139, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
+        { id: 1, name: 'Orange Juice 300ml', price: 129, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
+        { id: 2, name: 'Apple Juice 300ml', price: 139, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
+        { id: 3, name: 'Watermelon Juice 300ml', price: 119, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
+        { id: 4, name: 'Pineapple Juice 300ml', price: 149, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
+        { id: 5, name: 'Mixed Fruit Juice 300ml', price: 159, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
+        { id: 6, name: 'Mango Juice 300ml', price: 149, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
+        { id: 7, name: 'Pomegranate Juice 300ml', price: 169, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
+        { id: 8, name: 'Grape Juice 300ml', price: 139, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
+        { id: 9, name: 'Strawberry Juice 300ml', price: 159, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
+        { id: 10, name: 'Kiwi Juice 300ml', price: 169, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
+        { id: 11, name: 'Papaya Juice 300ml', price: 129, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
+        { id: 12, name: 'Guava Juice 300ml', price: 129, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
+        { id: 13, name: 'Mosambi Juice 300ml', price: 119, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
+        { id: 14, name: 'Lychee Juice 300ml', price: 179, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
+        { id: 15, name: 'Dragon Fruit Juice 300ml', price: 189, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
       ]
     },
     {
       id: 5,
-      name: 'Smoothies',
+      name: 'Fresh Fruit Smoothies',
       icon: '🥤',
       items: [
-        { id: 1, name: 'Mango Smoothie', price: 149, image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=300&h=300&fit=crop' },
+        { id: 1, name: 'Mango Smoothie', price: 159, image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=300&h=300&fit=crop' },
         { id: 2, name: 'Berry Blast Smoothie', price: 169, image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=300&h=300&fit=crop' },
-        { id: 3, name: 'Green Detox Smoothie', price: 179, image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=300&h=300&fit=crop' },
+        { id: 3, name: 'Banana Smoothie', price: 149, image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=300&h=300&fit=crop' },
+        { id: 4, name: 'Tropical Smoothie', price: 179, image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=300&h=300&fit=crop' },
+        { id: 5, name: 'Avocado Smoothie', price: 189, image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=300&h=300&fit=crop' },
+        { id: 6, name: 'Peanut Butter Smoothie', price: 199, image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=300&h=300&fit=crop' },
+        { id: 7, name: 'Green Detox Smoothie', price: 179, image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=300&h=300&fit=crop' },
+      ]
+    },
+    {
+      id: 6,
+      name: 'Healthy Detox Juices',
+      icon: '🥬',
+      items: [
+        { id: 1, name: 'Loki Mint Detox Juice', price: 129, image: 'https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=300&h=300&fit=crop' },
+        { id: 2, name: 'Lemon Juice', price: 129, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=300&h=300&fit=crop' },
+        { id: 3, name: 'Amla Anar Detox Juice', price: 129, image: 'https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=300&h=300&fit=crop' },
+        { id: 4, name: 'Cucumber Detox Juice', price: 119, image: 'https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=300&h=300&fit=crop' },
+        { id: 5, name: 'Beetroot Detox Juice', price: 139, image: 'https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=300&h=300&fit=crop' },
+        { id: 6, name: 'Carrot Ginger Detox', price: 129, image: 'https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=300&h=300&fit=crop' },
+        { id: 7, name: 'Green Detox Mix', price: 149, image: 'https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=300&h=300&fit=crop' },
+      ]
+    },
+    {
+      id: 7,
+      name: 'Crispy Vegetable Salad',
+      icon: '🥕',
+      items: [
+        { id: 1, name: 'Garden Fresh Salad', price: 159, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
+        { id: 2, name: 'Mediterranean Veggie Salad', price: 179, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
+        { id: 3, name: 'Crunchy Veggie Mix', price: 149, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
+      ]
+    },
+    {
+      id: 8,
+      name: 'Nutritious Sprout Salad',
+      icon: '🌱',
+      items: [
+        { id: 1, name: 'Mixed Sprout Salad', price: 139, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
+        { id: 2, name: 'Moong Sprout Salad', price: 129, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
+        { id: 3, name: 'Chickpea Sprout Salad', price: 149, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
+        { id: 4, name: 'Protein Power Sprout', price: 159, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
+        { id: 5, name: 'Tangy Sprout Mix', price: 139, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop' },
+      ]
+    },
+    {
+      id: 9,
+      name: 'Coconut Beverages',
+      icon: '🥥',
+      items: [
+        { id: 1, name: 'Fresh Coconut Water', price: 99, image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=300&h=300&fit=crop' },
+        { id: 2, name: 'Coconut Milk Shake', price: 149, image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=300&h=300&fit=crop' },
       ]
     },
   ];
 
   return (
-    <section 
-      id="menu" 
+    <section
+      id="menu"
       className="menu-section"
       ref={sectionRef}
       style={{

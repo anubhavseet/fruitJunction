@@ -11,16 +11,16 @@ const Products = () => {
       name: 'Cream Chia Paneer Salad',
       originalPrice: 249,
       salePrice: 199,
-      category: 'Paneer Protein Salads',
+      category: 'Paneer Based Protein Salad',
       image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop',
       onSale: true
     },
     {
       id: 2,
-      name: 'High Protein Rajma Salad',
+      name: 'High Protein Rajma Salad (250 Gms)',
       originalPrice: 349,
       salePrice: 289,
-      category: 'Paneer Protein Salads',
+      category: 'Paneer Based Protein Salad',
       image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop',
       onSale: true
     },
@@ -28,8 +28,8 @@ const Products = () => {
       id: 3,
       name: 'Lettuce Paprika Paneer Salad',
       originalPrice: 499,
-      salePrice: 275,
-      category: 'Paneer Protein Salads',
+      salePrice: 349,
+      category: 'Paneer Based Protein Salad',
       image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop',
       onSale: true
     },
@@ -38,7 +38,7 @@ const Products = () => {
       name: 'Paneer Protein Salad',
       originalPrice: 239,
       salePrice: 189,
-      category: 'Paneer Protein Salads',
+      category: 'Paneer Based Protein Salad',
       image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop',
       onSale: true
     },
@@ -47,31 +47,31 @@ const Products = () => {
   const popularProducts = [
     {
       id: 5,
-      name: 'Strawberry Juice 300 Ml',
-      price: 129,
-      category: 'Fresh Fruit Juices',
-      image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=400&fit=crop'
+      name: 'Creamy Fruit Bowl',
+      price: 299,
+      category: 'Fresh Mixed Fruit Salad',
+      image: 'https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=400&h=400&fit=crop'
     },
     {
       id: 6,
-      name: 'Watermelon Juice – 300 Ml',
-      price: 119,
-      category: 'Fresh Fruit Juices',
-      image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=400&fit=crop'
+      name: 'Loki Mint Detox Juice – 300 ML',
+      price: 129,
+      category: 'Healthy Detox Juices',
+      image: 'https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400&h=400&fit=crop'
     },
     {
       id: 7,
-      name: 'Kiwi Juice – 300 ML',
-      price: 189,
-      category: 'Fresh Fruit Juices',
+      name: 'Lemon Juice – 300 ML',
+      price: 129,
+      category: 'Healthy Detox Juices',
       image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=400&fit=crop'
     },
     {
       id: 8,
-      name: 'Apple Juice – 300 ML',
-      price: 159,
-      category: 'Fresh Fruit Juices',
-      image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=400&fit=crop'
+      name: 'Amla Anar Detox Juice – 300 ML',
+      price: 129,
+      category: 'Healthy Detox Juices',
+      image: 'https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400&h=400&fit=crop'
     },
   ];
 
@@ -84,8 +84,8 @@ const Products = () => {
         <span className="sale-badge">SALE</span>
       )}
       <div className="product-image">
-        <img 
-          src={product.image} 
+        <img
+          src={product.image}
           alt={product.name}
           loading="lazy"
         />
@@ -116,8 +116,8 @@ const Products = () => {
   return (
     <div className="products-section">
       {/* Special Offers */}
-      <section 
-        className="special-offers" 
+      <section
+        className="special-offers"
         ref={offersRef}
         style={{
           background: `linear-gradient(135deg, ${currentBackground.colors[0]}dd, ${currentBackground.colors[1]}dd)`,
@@ -134,17 +134,17 @@ const Products = () => {
               </h2>
             </div>
             <p className="section-subtitle">
-              Looking for the perfect Diet Food or a quick Weight Loss Meal? 
+              Looking for the perfect Diet Food or a quick Weight Loss Meal?
               Our special offers make healthy eating affordable!
             </p>
           </div>
 
           <div className="products-grid">
             {specialOffers.map((product, index) => (
-              <ProductCard 
-                key={product.id} 
-                product={product} 
-                isSpecialOffer 
+              <ProductCard
+                key={product.id}
+                product={product}
+                isSpecialOffer
                 index={index}
                 isVisible={offersVisible}
               />
@@ -154,8 +154,8 @@ const Products = () => {
       </section>
 
       {/* Popular Products */}
-      <section 
-        className="popular-products" 
+      <section
+        className="popular-products"
         ref={popularRef}
         style={{
           background: `linear-gradient(135deg, ${currentBackground.colors[1]}dd, ${currentBackground.colors[2]}dd)`,
@@ -172,16 +172,16 @@ const Products = () => {
               </h2>
             </div>
             <p className="section-subtitle">
-              Top picks for every day — from fruit bowls to refreshing sips, 
+              Top picks for every day — from fruit bowls to refreshing sips,
               enjoy our best-selling flavors full of freshness and goodness.
             </p>
           </div>
 
           <div className="products-grid">
             {popularProducts.map((product, index) => (
-              <ProductCard 
-                key={product.id} 
-                product={product} 
+              <ProductCard
+                key={product.id}
+                product={product}
                 index={index}
                 isVisible={popularVisible}
               />
