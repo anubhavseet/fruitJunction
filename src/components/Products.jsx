@@ -77,8 +77,7 @@ const Products = () => {
 
   const ProductCard = ({ product, isSpecialOffer = false, index = 0, isVisible = false }) => (
     <div
-      className={`product-card fade-in-up ${isSpecialOffer ? 'special-offer' : ''} ${isVisible ? 'animate-on-scroll' : ''}`}
-      style={{ animationDelay: `${index * 0.1}s` }}
+      className={`product-card ${isSpecialOffer ? 'special-offer' : ''}`}
     >
       {product.onSale && (
         <span className="sale-badge">SALE</span>
